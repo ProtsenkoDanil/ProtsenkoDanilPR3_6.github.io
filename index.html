@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <img src="assets/Pokemon_logo.png" alt="Pokemon Logo" class="logo">
+        
+        <div class="battlefield">
+            <div class="pokemon" id="player1"> <!-- Було: id="pokemon1" -->
+                <h3>PIKACHU</h3>
+                <img src="https://archives.bulbagarden.net/media/upload/thumb/4/4a/0025Pikachu.png/800px-0025Pikachu.png" alt="Pikachu" class="pokemon-image">
+                <div class="health-bar">
+                    <div class="health" id="health1" style="width: 100%;"></div>
+                </div>
+                <button id="attack1">Attack</button>
+                <button id="special1">Special Attack</button>
+                <button id="quick-attack1">Quick Attack (3)</button> <!-- Нова кнопка атаки -->
+                <button id="thunderbolt1">Thunderbolt (1)</button> <!-- Нова кнопка атаки -->
+            </div>
+
+            <div class="pokemon" id="player2"> <!-- Було: id="pokemon2" -->
+                <h3>CHARMANDER</h3>
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png" alt="Charmander" class="pokemon-image">
+                <div class="health-bar">
+                    <div class="health" id="health2" style="width: 100%;"></div>
+                </div>
+                <button id="attack2">Attack</button>
+                <button id="special2">Special Attack</button>
+                <button id="quick-attack2">Quick Attack (3)</button> <!-- Нова кнопка атаки -->
+                <button id="ember2">Ember (1)</button> <!-- Нова кнопка атаки -->
+            </div>
+
+            <img id="pokeball" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/02/latest/20231226202856/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/640px-Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png" alt="Pokeball" class="pokeball">
+            <img id="explosion" src="https://cdn-icons-png.flaticon.com/512/7380/7380362.png" alt="Explosion" class="explosion">
+        </div>
+
+        <div id="logs" class="logs"></div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
